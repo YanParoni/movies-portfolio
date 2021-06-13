@@ -1,0 +1,53 @@
+.box-row h1 {
+  font-family: 'Abel', sans-serif;
+  font-size:42px;
+  text-align: center;
+  min-width: 30px;
+  margin-bottom: 0px;
+  color:rgb(161,161,161);
+}
+.box-row-content {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 48px 30px;
+  justify-content: center;
+}
+
+.box-row-element {
+  animation: animateGrid 0.5s;
+  align-self: center;
+  background-color:transparent;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px 40px 0;
+  overflow: hidden;
+  width: 290px;
+  border: none;
+  max-height:430px;
+
+}
+
+@keyframes animateGrid {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:0.8;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .box-row-content {
+    grid-template-columns: auto auto;
+  }
+
+  .box-row-element:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .box-row h1 {
+    font-size:22px;
+  }
+}

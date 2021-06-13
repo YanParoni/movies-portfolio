@@ -1,0 +1,29 @@
+.movieinfoconv {
+  width: 100%;
+  height: 105px;
+  background: #1c1c1c;
+  position: relative;
+  padding: 25px 20px 0px 20px;
+  box-sizing: border-box;
+  font-family: 'Abel', sans-serif;
+  font-size: 22px;
+}
+
+.movieinfoconv-content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.movie-layout {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px 20px 0 0;
+}
+
+.movieinfo-info {
+  padding: 5px 0 0 10px;
+  float: left;
+}

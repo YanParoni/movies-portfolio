@@ -1,0 +1,16 @@
+.movie {
+  margin-bottom: 100px;
+}
+
+.movie-grid {
+  max-width: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body{
+  background-color: rgb(10,16,20);
+}
+
+.heart .heart:img{
+  display: none;
+}

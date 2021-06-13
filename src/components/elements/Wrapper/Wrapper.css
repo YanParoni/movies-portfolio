@@ -1,0 +1,15 @@
+circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  color: red;
+  position: absolute;
+  display: flex;
+  left: 3px;
+}
+
+svg {
+  position: absolute;
+  display: flex;
+  left:0.2px;
+}

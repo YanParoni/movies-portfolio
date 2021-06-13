@@ -1,0 +1,31 @@
+
+
+.heart {
+ position: absolute;
+ flex-direction: column;
+ height: 120px;
+ padding: 0;
+ margin-top: 170px;
+ margin-left: 90px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(120%) contrast(120%);
+opacity: 0.2;}
+
+
+.vote {
+  color: antiquewhite;
+  position: absolute;
+  flex-direction: column;
+  padding:0;
+  font-size: 30px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   opacity: 0.3;
+   margin-top: 205px;
+   margin-left: 115px;
+}
+
+

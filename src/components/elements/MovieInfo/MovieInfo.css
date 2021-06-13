@@ -1,0 +1,129 @@
+.movieinfo {
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  animation: animateMovieinfo 0.3;
+}
+
+
+@keyframes animateMovieinfo {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.imdb {
+  width: 50px;
+  display: inline;
+  border: none;
+}
+
+.imdb:hover {
+  border-style: solid;
+  border-color: springgreen;
+  opacity: 0.4;
+  border-width: 2px;
+  border-radius: 3px;
+}
+
+.movieinfo-content {
+  max-width: 1280px;
+  
+  margin: 0 auto;
+  background: rgb(10,16,20);
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+}
+.movieinfo-thumb .heart{
+  display: none;
+}
+
+.movieinfo-thumb {
+  display: flex;
+  flex-basis: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 25px;
+    min-width: 30%;
+    object-fit: cover;
+    width: 466px;
+    height: 622px;
+}
+
+.movieinfo-text{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+align-items:flex-start ;
+flex-direction: column;
+margin-left: 5px; 
+font-family: 'Roboto', sans-serif;
+ color: white;
+}
+
+
+.movieinfo-text h1{
+  font-size: 5rem;
+}
+
+.movieinfo-text p{
+width: 564px;}
+
+meter::-webkit-meter-bar {
+  background: #FFF;
+  width:300px;
+}
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(to bottom, #16d47b);
+}
+meter::-webkit-meter-suboptimum-value {
+  background: linear-gradient(to bottom, #fbb450);
+}
+meter::-webkit-meter-even-less-good-value {
+  background: linear-gradient(to bottom, #ee5f5b);
+}
+
+.actor {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: #0A1014;
+  flex-wrap: wrap;
+}
+
+
+.actor img{
+  display: flex;
+  width: 185px;
+  border-radius: 50px;
+  height: 278px;
+  margin-left: 25%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  align-self: center;
+}
+
+.actor-name {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  color: #fff;
+}
+
+.actor-character {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color:#fff;
+  margin: 10px;
+
+}
+.act{
+ margin-left: 20px;
+}
