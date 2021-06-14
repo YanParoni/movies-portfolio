@@ -28,8 +28,9 @@
 }
 
 .back {
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  margin-left: 1.8%;
+  width: 40px;
   display: flex;
   margin-top: 2px;
   filter: invert(59%) sepia(11%) saturate(578%) hue-rotate(162deg) brightness(90%) contrast(85%);

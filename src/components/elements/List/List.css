@@ -1,11 +1,12 @@
 .box-row h1 {
-  font-family: 'Abel', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size:42px;
   text-align: center;
   min-width: 30px;
   margin-bottom: 0px;
-  color:rgb(161,161,161);
+  color:#FFFFFF
 }
+
 .box-row-content {
   display: flex;
   flex-flow: row wrap;

@@ -87,7 +87,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="rmdb-home">
+      <div >
         {this.state.heroImage ? (
           <div>
             <HeroImg
@@ -101,7 +101,7 @@ class Home extends Component {
           </div>
         ) : null}
          
-        <div className="rmdb-home-grid">
+        <div >
           <List
             header={this.state.searchTerm ? "Search Result" : "Trend Movies"}
             loading={this.state.loading}
