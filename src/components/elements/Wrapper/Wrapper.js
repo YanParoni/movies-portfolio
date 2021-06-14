@@ -16,7 +16,7 @@ export default class Wrapper extends React.Component{
     
       return (
         <div classname='circle'>
-                      <span className='rating'>{ratin*10}</span>
+                      <span className='rating'>{ratin*10}%</span>
 
         <svg
           height={radius * 2}
