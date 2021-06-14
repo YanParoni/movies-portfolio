@@ -23,7 +23,7 @@ export default class Wrapper extends React.Component{
           width={radius * 2}
           >
           <circle
-            stroke="green"
+            stroke="rgb(246, 165, 49)"
             fill='#0A1014'
             strokeWidth={ stroke }
             strokeDasharray={ this.circumference + ' ' + this.circumference }

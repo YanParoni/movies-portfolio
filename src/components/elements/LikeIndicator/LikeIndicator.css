@@ -10,8 +10,8 @@
  display: flex;
  justify-content: center;
  align-items: center;
- filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(120%) contrast(120%);
-opacity: 0.2;}
+ filter: invert(14%) sepia(78%) saturate(4492%) hue-rotate(359deg) brightness(114%) contrast(110%);
+ opacity: 0.3;}
 
 
 .vote {

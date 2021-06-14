@@ -29,8 +29,8 @@ font-size: small;
 
 .moviethumb img:hover {
   border-style: solid;
-  border-color: springgreen;
-  opacity: 0.4;
+  border-color: #F6A531;
+  opacity: 0.7;
   border-width: 7px;
 }
 
