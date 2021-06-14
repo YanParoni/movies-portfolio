@@ -30,8 +30,8 @@ export default class Thumbnail extends Component {
                   radius={30}
                   stroke={4}
                   progress={rating * 9}
+                  ratin={rating}
                 />
-                <span className="rating">{rating}</span>
               </section>
               <img className="clickable" src={image} alt="moviethumb" />
             </Link>

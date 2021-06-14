@@ -11,44 +11,12 @@ width: 100%;  height: 100%;
   align-items: center;
 }
 
-.circle{
-  padding:21px;
-  border-radius: 100%;
-  background-color: #032541;
-  position:absolute;
-  padding: auto;
-  display: flex;
-  opacity: 0.9;
-  align-items: center;
-}
-
 
 .rating:hover {
 display: flex ;
 font-size: small;
 }
 
-.circle:hover {
-  padding:20px;
-  border-radius: 100%;
-  background-color: #90cea1;
-  position:absolute;
-  padding: auto;
-  display: flex;
-  opacity: 1;
-}
-
-
-.rating {
-display: flex ;
-font-size: small;
-color:#DEE2E6;
-}
-
-.rating-circle {
-  display: flex;
-  position: absolute;
-}
 
 .clickable {
   cursor: pointer;
