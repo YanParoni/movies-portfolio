@@ -104,7 +104,7 @@ meter::-webkit-meter-even-less-good-value {
 .actor img{
   display: flex;
   width: 185px;
-  border-radius: 50px;
+  border-radius: 9999px;
   height: 278px;
   margin-left: 25%;
   margin-bottom: 25px;

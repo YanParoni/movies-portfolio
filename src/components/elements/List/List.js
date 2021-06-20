@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './List.css';
+import LikeIndicator from'../LikeIndicator/LikeIndicator';
 
 export default class List extends Component {
   render() {
-    const { header, loading, children ,id} = this.props;
+    const { header, loading, children ,id,vote} = this.props;
 
     const renderElements = () => {
       const elements = children.map((element) => {
         return (
-          <div key={element.id} className="box-row-element">
+          <div key={element.id} className="flex flex-row flex-wrap w-1/5 rounded-3xl mr-10 mb-10">
             {element}
           </div>
         );
@@ -18,8 +19,12 @@ export default class List extends Component {
 
     return (
       <div className="box-row">
+        
         {header && !loading ? <h1>{header}</h1> : null}
-        <div className="box-row-content">{renderElements()}</div>
+        
+        <div className="flex flex-row flex-wrap p-4 justify-center ">
+          
+          {renderElements()}</div>
       </div>
     );
   }

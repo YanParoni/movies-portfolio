@@ -1,6 +1,5 @@
 import { imageUrl, backImageSize, poster } from '../../../configs';
-import React, { Component, Link } from 'react';
-import Thumbnail from '../Thumbnail/Thumbnail';
+import React, { Component, Link, Fragment } from 'react';
 import './MovieInfo.css';
 
 export default class MovieInfo extends Component {
@@ -21,16 +20,16 @@ export default class MovieInfo extends Component {
     } = movie;
     const posterAct = 'w185';
     return (
+      <Fragment>
       <div className="movieinfo">
         <div className="movieinfo-content">
           <div className="movieinfo-thumb">
-            <Thumbnail
-              image={
+            <img className='rounded-3xl'
+              src={
                 poster_path
                   ? `${imageUrl}w1280${poster_path}`
                   : './images/no_image.jpg'
               }
-              clickable={false}
             />
           </div>
 
@@ -64,25 +63,29 @@ export default class MovieInfo extends Component {
           </div>
         </div>
         
-        <div className="actor">
-
-            {actor.map( el=>
-            <div className='act' key={el.id} >
-              <img
-                classname="actor-photo"
-                src={
-                  el.profile_path
-                    ? `${imageUrl}${posterAct}${el.profile_path}`
-                    : './images/no_image.jpg'
-                }
-                alt="actor/actress-photo"
-              />
-              <span className="actor-name">{el.name}</span>
-              <span className="actor-character">Plays {el.character}</span>
-            </div>)}
-            </div>
 
       </div>
+
+<div className="actor flex  ">
+
+{actor.map( el=>
+<div className="flex-col mx-20 w-52 mb-10 mt-10" key={el.id} >
+  <img
+    classname="flex "
+    src={
+      el.profile_path
+        ? `${imageUrl}${posterAct}${el.profile_path}`
+        : './images/no_image.jpg'
+    }
+    alt="actor/actress-photo"
+  />
+  <strong className="flex ml-20 text-white">{el.name}</strong>
+  <span className="flex ml-20 text-white">Plays {el.character}</span>
+</div>)}
+
+
+</div>
+</Fragment>
     );
   }
 }
