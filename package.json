@@ -14,12 +14,14 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "web-vitals": "^1.1.2",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
     "tailwindcss": "^2.2.2"
     
   },
   "scripts": {
-    "start": "npm start",
-    "build": "npm build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -46,8 +48,6 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.2"
+    
   }
 }
