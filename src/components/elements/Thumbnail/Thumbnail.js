@@ -7,7 +7,7 @@ import '../LikeIndicator/LikeIndicator.css';
 
 export default class Thumbnail extends Component {
   render() {
-    const { movieId, movieName, image, clickable, rating, vote, title } =
+    const { movieId, movieName, image, clickable, rating, vote } =
       this.props;
 
     return (
