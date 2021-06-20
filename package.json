@@ -18,7 +18,6 @@
     
   },
   "scripts": {
-    "prestart": "npm start",
     "start": "npm start",
     "build": "npm build",
     "test": "craco test",
