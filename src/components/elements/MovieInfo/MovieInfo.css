@@ -112,12 +112,6 @@ meter::-webkit-meter-even-less-good-value {
   align-self: center;
 }
 
-.actor-name {
-  font-family: 'Roboto', sans-serif;
-  margin: 10px;
-  color: #fff;
-}
-
 .actor-character {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
