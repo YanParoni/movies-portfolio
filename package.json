@@ -30,6 +30,5 @@
       "react-app/jest"
     ]
   },
-  "browserslist": [],
   "devDependencies": {}
 }
