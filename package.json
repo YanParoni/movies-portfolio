@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.2",
+    "@tailwindcss/postcss7-compat": "^2.2.2",
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -34,11 +35,11 @@
   },
   "browserslist": [],
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "8.3.5",
-    "tailwindcss": "^2.2.2"
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.2"
   },
   "peerDependencies": {
-    "postcss": "^8.3.5"
+    "postcss": "^7.0.36"
   }
 }
