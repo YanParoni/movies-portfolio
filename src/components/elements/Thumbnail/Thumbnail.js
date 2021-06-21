@@ -27,7 +27,7 @@ export default class Thumbnail extends Component {
                 <span className="flex ml-6  mb-2.5 text-xl flex-row w-36  self-center  justify-center absolute  text-2xl text-white">
                   {vote}
                 </span>
-                <div className="flex-nowrap ml-6 mt-32 absolute text-2xl text-white ">
+                <div className="flex-nowrap text-center ml-6 mt-32 absolute text-2xl text-white ">
                   {movieName}
                 </div>
 
