@@ -11,7 +11,6 @@ export default class MovieInfo extends Component {
     const { movie, directors, actor } = this.props;
     const { length } = directors;
     const {
-      backdrop_path,
       poster_path,
       title,
       overview,
@@ -66,10 +65,10 @@ export default class MovieInfo extends Component {
 
       </div>
 
-<div className="actor flex  ">
+<div className="actor flex-col   ">
 
 {actor.map( el=>
-<div className="flex-col mx-20 w-52 mb-10 mt-10" key={el.id} >
+<div className="flex-row shadow shadow-2xl mx-20  w-80 mb-24 mt-24" key={el.id} >
   <img
     classname="flex "
     src={
@@ -79,8 +78,8 @@ export default class MovieInfo extends Component {
     }
     alt="actor/actress-photo"
   />
-  <strong className="flex ml-20 text-white">{el.name}</strong>
-  <span className="flex ml-20 text-white">Plays {el.character}</span>
+  <strong className="flex ml-24 text-center mb-6 text-white">{el.name}</strong>
+  <span className="flex ml-24 text-center mb-6 text-white">Plays {el.character}</span>
 </div>)}
 
 

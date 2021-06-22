@@ -42,10 +42,13 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
+  margin-bottom: 15px;
+  margin-top: 15px;
   overflow: hidden;
 }
 .movieinfo-thumb .heart{
   display: none;
+  
 }
 
 .movieinfo-thumb {
@@ -58,6 +61,8 @@
     object-fit: cover;
     width: 466px;
     height: 622px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .movieinfo-text{
@@ -68,19 +73,32 @@ flex-direction: column;
 font-family: 'Roboto', sans-serif;
  color: white;
  margin-left: 45px;
+ margin-bottom: 15px;
+ margin-top: 15px;
+
 }
 
 
 .movieinfo-text h1{
   font-size: 5rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+
 }
 
 .movieinfo-text p{
-width: 564px;}
+width: 564px;
+margin-bottom: 15px;
+margin-top: 15px;
+
+}
 
 meter::-webkit-meter-bar {
   background: #FFF;
   width:300px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 meter::-webkit-meter-optimum-value {
   background: linear-gradient(to bottom, #16d47b);
@@ -98,20 +116,27 @@ meter::-webkit-meter-even-less-good-value {
   flex-direction: row;
   background-color: #0A1014;
   flex-wrap: wrap;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 
 .actor img{
   display: flex;
   width: 185px;
-  border-radius: 9999px;
+  border-radius: 8px;
+  -webkit-box-shadow: -30px 19px 5px 3px rgba(9,15,19,0.67);
+box-shadow: 30px 19px 5px 3px rgba(0,0,0,0.67);
   height: 278px;
-  margin-left: 25%;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-left: 20%;
+  margin-bottom: 15%;
+
   align-self: center;
 }
 
+.actor img:hover{
+  transform: scale(1.1);
+}
 .actor-character {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -121,4 +146,6 @@ meter::-webkit-meter-even-less-good-value {
 }
 .act{
  margin-left: 20px;
+ margin-bottom: 15px;
+ margin-top: 15px;
 }

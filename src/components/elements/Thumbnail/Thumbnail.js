@@ -24,7 +24,7 @@ export default class Thumbnail extends Component {
                 className="w-72 box-border  py-32 border-4 rounded-3xl transition shadow-2xl duration-700 ease-in-out  bg-black flex opacity-0 hover:opacity-100 backdrop-opacity-100  
              p-16 absolute self-center flex-row justify-center text-green pr-24 pb-52 border-yellow-500  bg-opacity-75 "
               >
-                <span className="flex ml-6  mb-2.5 text-xl flex-row w-36  self-center  justify-center absolute  text-2xl text-white">
+                <span className="flex ml-5  mb-2.5 text-xl flex-row  self-center  justify-center absolute  text-2xl text-white">
                   {vote}
                 </span>
                 <div className="flex-nowrap text-center ml-6 mt-32 absolute text-2xl text-white ">

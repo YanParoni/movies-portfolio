@@ -14,3 +14,17 @@ body{
 .heart .heart:img{
   display: none;
 }
+
+.provider {
+  margin-top: 760px;
+  margin-left: 220px;
+  margin-bottom: 40px;
+}
+
+.logo:hover {
+  border-style: solid;
+  border-color: springgreen;
+  opacity: 0.4;
+  border-width: 2px;
+  border-radius: 3px;
+}
