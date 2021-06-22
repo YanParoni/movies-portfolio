@@ -33,14 +33,14 @@ export default class MovieInfo extends Component {
           </div>
 
           <div className="movieinfo-text">
-            <h1> {title} </h1>
-            <h2> PLOT </h2>
-            <p> {overview} </p>
+            <h1 className=' flex mb-48'> {title} </h1>
+            <p className='flex mb-8 text-4x1'> PLOT </p>
+            <p classname='flex mb-20'> {overview} </p>
             <a href={`https://www.imdb.com/title/${imdb_id}`} target="_blank">
-              <img className="imdb" src="./images/imdb.svg" alt="imdb-logo" />
+              <img className="imdb flex mb-4" src="./images/imdb.svg" alt="imdb-logo" />
             </a>
             <div className="imdb-rating">
-              <meter
+              <meter classname='flex mb-28'
                 min="0"
                 max="100"
                 optimum="100"
@@ -49,9 +49,9 @@ export default class MovieInfo extends Component {
                 value={vote_average * 10}
               />
 
-              <p className="imdb-score">{vote_average}</p>
+              <p className="flex mb-24 ">{vote_average}</p>
             </div>
-            {length > 1 ? <h3>DIRECTORS</h3> : <h3>DIRECTOR</h3>}{' '}
+            {length > 1 ? <h3 className='flex mb-8'>DIRECTORS</h3> : <h3>DIRECTOR</h3>}{' '}
             {directors.map((element, index) => {
               return (
                 <h3 key={index} className="director">
