@@ -1,14 +1,4 @@
-.movieinfo {
-  padding: 40px 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  
-  justify-content: space-evenly;
-  align-items: flex-start;
-  animation: animateMovieinfo 0.3;
-}
+
 
 
 @keyframes animateMovieinfo {
@@ -111,15 +101,8 @@ meter::-webkit-meter-even-less-good-value {
 }
 
 .actor {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  background-color: #0A1014;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-  margin-top: 15px;
+ width: 350px;
 }
-
 
 .actor img{
   display: flex;
@@ -132,6 +115,11 @@ box-shadow: 30px 19px 5px 3px rgba(0,0,0,0.67);
   margin-bottom: 15%;
 
   align-self: center;
+}
+
+.poster {
+  height: 700px;
+  border-radius: 20px;
 }
 
 .actor img:hover{

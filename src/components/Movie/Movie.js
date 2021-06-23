@@ -16,6 +16,7 @@ export default class Movie extends Component {
       loading: false,
       stream: [],
       link: '',
+      trailer: ''
     };
   }
   /* https://api.themoviedb.org/3/movie/{movie_id}/watch/providers?api_key=<<api_key>>*/
@@ -31,15 +32,11 @@ export default class Movie extends Component {
       const endpoint = `${url}movie/${this.props.match.params.movieId}?api_key=${apiKey}&language=en-US`;
       this.fetchMovieData(endpoint);
     }
-    if (this.state.stream !== null) {
-      const opa = `${url}movie/${this.props.match.params.movieId}/watch/providers?api_key=${apiKey}&language=en-US`;
-      this.fetchProviders(opa);
-    }
+      const stream = `${url}movie/${this.props.match.params.movieId}/watch/providers?api_key=${apiKey}&language=en-US`;
+      this.fetchProviders(stream);
+      const trailer = `https://api.themoviedb.org/3/movie/${this.props.match.params.movieId}/videos?api_key=${ apiKey}&language=en-US`;
+      this.fetchTrailer(trailer)
   }
-
-  /* In the future I pretend to implement the providers stream but in the moment 
-  the api is lacking in fetching a specific movie withing a region and the local providers
-  */
 
   fetchProviders = (endpoint) => {
     fetch(endpoint)
@@ -67,6 +64,14 @@ export default class Movie extends Component {
         console.log('Error: ' + err);
       });
   };
+
+fetchTrailer = (endpoint) =>{
+  fetch(endpoint)
+  .then((result) => result.json())
+  .then((result) =>{
+    this.setState({ trailer: result.results[0].key})
+  })
+}
 
   fetchMovieData = (endpoint) => {
     fetch(endpoint)
@@ -116,13 +121,14 @@ export default class Movie extends Component {
         
         <div className='flex flex-row'>
           {this.state.movie && this.state.actors ? (
-            <div>
+            <div className='w-full'>
               <Nav movie={this.props.location.movieName} />
               <MovieInfo 
                 movie={this.state.movie}
                 directors={this.state.directors}
                 imdb_id={this.state.imdb_id}
                 actor={this.state.actors}
+                trailer={`https://www.youtube.com/embed/${this.state.trailer}`}
               />
             </div>
           ) : null}
